@@ -1,9 +1,16 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(str) {
+  let origStr = str.toLowerCase()
+  let reverseStr = origStr.split('').reverse().join('')
+  return reverseStr === origStr ? true : false
 }
 
+
 /* 
-  Add your pseudocode here
+  1. Write a function isPalindrome
+  2. Will take in one argument (a string)
+  3. If argument === a palindrome, return true
+  4. If argument \== a palindrom, return false
+  5. console log result
 */
 
 /*
